@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:orientation="vertical" android:background="#fff" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageView" android:padding="14dp" android:layout_width="80dp" android:layout_height="80dp" android:contentDescription="@string/nav_header_desc" app:srcCompat="@drawable/ic_camera_black_24dp"/>
+        <TextView android:textSize="22sp" android:textColor="#212121" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/app_name" android:paddingEnd="8dp"/>
+    </LinearLayout>
+    <View android:background="#aa212121" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp" android:layout_marginStart="-20dp"/>
+</LinearLayout>

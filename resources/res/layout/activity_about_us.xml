@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#fff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolb" layout="@layout/toolbarr"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="60dp">
+            <TextView android:textSize="15sp" android:textColor="#212121" android:paddingLeft="20dp" android:paddingTop="30dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SnapLingo is a Made in India Android application developed by applex.in with the view of making Document Scanning &amp; Optical Character Recognition(OCR) accessible to every smart phone user." android:fontFamily="@font/oxygen_bold"/>
+            <LinearLayout android:gravity="center" android:paddingTop="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_translate_black_24dp" android:contentDescription="Translate"/>
+                <ImageView android:layout_gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_location_on_black_24dp" android:contentDescription="Locate"/>
+                <ImageView android:layout_gravity="center_horizontal" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/ic_camera_black_24dp" android:contentDescription="Snap"/>
+                <ImageView android:layout_gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_search_black_24dp" android:contentDescription="Search"/>
+                <ImageView android:layout_gravity="center" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_format_align_left_black_24dp" android:contentDescription="Text"/>
+            </LinearLayout>
+            <TextView android:textSize="30sp" android:textColor="#155" android:gravity="center" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name"/>
+            <TextView android:textSize="15sp" android:textColor="#212121" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SnapLingo comes as a package solution comprising multiple features such as Document scanner, translator, locator, search, add to contact, scanning QR/Bar codes &amp; generating QR codes. The user get several features to manipulate the derived information and then share." android:fontFamily="@font/oxygen_bold"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:gravity="center" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/ad_view" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15sp" android:textColor="#212121" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Made with ❤️ in India" android:layout_marginStart="5dp"/>
+    </LinearLayout>
+</RelativeLayout>

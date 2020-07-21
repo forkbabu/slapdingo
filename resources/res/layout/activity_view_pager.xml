@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ededed" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Light" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="60dp" android:elevation="5dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="0dp" app:layout_scrollFlags="5">
+            <ImageView android:id="@+id/back" android:background="@drawable/custom_ripple_white" android:padding="10dp" android:layout_width="44dp" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:src="@drawable/ic_arrow_back_black_24dp" android:layout_marginStart="5dp" android:layout_marginEnd="8dp"/>
+            <TextView android:textSize="18dp" android:textColor="#000" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/doc_name" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="My Document" android:maxLines="1" android:fontFamily="@font/oxygen_bold" android:layout_marginEnd="55dp"/>
+            <ImageView android:id="@+id/edit_name" android:background="@drawable/custom_ripple_white" android:padding="10dp" android:visibility="gone" android:layout_width="44dp" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginTop="8dp" android:layout_marginRight="20dp" android:layout_marginBottom="8dp" android:src="@drawable/ic_baseline_edit_24" android:layout_marginStart="-49dp"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="110dp" android:layout_marginBottom="80dp" android:foregroundGravity="center"/>
+    <TextView android:textColor="#fff" android:id="@+id/page_count" android:background="@drawable/page_count_bg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="75dp" android:text="Page 1 of 2" android:layout_centerHorizontal="true" android:elevation="5dp"/>
+    <RelativeLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:background="#fff" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="10dp">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/crop" android:background="@drawable/custom_ripple_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:padding="7dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_crop_black_24" android:tint="#212121"/>
+                <TextView android:textSize="12dp" android:textColor="#212121" android:gravity="center" android:id="@+id/filter2_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Crop" android:fontFamily="@font/oxygen_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/filters" android:background="@drawable/custom_ripple_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_photo_filter_highcont" android:tint="#212121"/>
+                <TextView android:textSize="12dp" android:textColor="#212121" android:gravity="center" android:id="@+id/filter3_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Filters" android:fontFamily="@font/oxygen_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ocr" android:background="@drawable/custom_ripple_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:padding="6dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ocr_grey" android:tint="#212121"/>
+                <TextView android:textSize="12dp" android:textColor="#212121" android:gravity="center" android:id="@+id/ocr_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OCR" android:fontFamily="@font/oxygen_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/done" android:background="@drawable/custom_ripple_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_baseline_done_24" android:tint="@color/colorAccent"/>
+                <TextView android:textSize="12dp" android:textColor="#212121" android:gravity="center" android:id="@+id/done_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Done" android:fontFamily="@font/oxygen_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

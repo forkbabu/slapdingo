@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/grid_page" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" app:cardCornerRadius="2dp">
+    <ImageView android:id="@+id/grid_image" android:layout_width="match_parent" android:layout_height="250dp" android:src="@drawable/ic_search_black_24dp" android:scaleType="centerCrop"/>
+    <ImageButton android:layout_gravity="top|right|center_vertical|center_horizontal|center|end" android:id="@+id/delete_image" android:background="@drawable/custom_ripple_grey_bg" android:padding="8dp" android:layout_width="28dp" android:layout_height="28dp" android:layout_margin="10dp" android:src="@drawable/ic_close_black_24dp"/>
+    <TextView android:textColor="#fff" android:gravity="center" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/count" android:background="@drawable/page_count_bg" android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="10dp" android:text="3"/>
+</androidx.cardview.widget.CardView>

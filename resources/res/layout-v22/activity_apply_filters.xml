@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rlContainer" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Light" android:background="#fff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="60dp" android:elevation="5dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="0dp" app:layout_scrollFlags="5">
+            <ImageView android:id="@+id/btnClose" android:background="@drawable/custom_ripple_white" android:padding="10dp" android:layout_width="44dp" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:src="@drawable/ic_arrow_back_black_24dp" android:layout_marginStart="5dp" android:layout_marginEnd="8dp" android:layout_marginVertical="8dp"/>
+            <TextView android:textSize="18dp" android:textColor="#000" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/doc_name" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Apply Filters" android:maxLines="1" android:fontFamily="@font/oxygen_bold" android:layout_marginEnd="55dp" android:paddingHorizontal="5dp"/>
+            <ImageView android:id="@+id/btnDone" android:background="@drawable/custom_ripple_white" android:padding="10dp" android:visibility="visible" android:layout_width="44dp" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:src="@drawable/ic_baseline_done_24" android:tint="@color/colorAccent" android:layout_marginStart="-50dp" android:layout_marginVertical="8dp"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="60dp">
+        <FrameLayout android:layout_gravity="center" android:id="@+id/frameLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/holder" android:layout_alignParentTop="true">
+            <FrameLayout android:layout_gravity="center" android:id="@+id/holderImageCrop" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp">
+                <ImageView android:layout_gravity="center" android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true"/>
+                <ProgressBar android:id="@+id/progressBar" android:background="@color/halfTransparentBackground" android:padding="150dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <com.labters.documentscanner.libraries.PolygonView android:layout_gravity="center" android:id="@+id/polygonView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/holder" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="10dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/filter1" android:background="@drawable/custom_ripple_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/filter1img" android:padding="7dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_filter_normal"/>
+                <TextView android:textSize="12dp" android:textColor="#212121" android:gravity="center" android:id="@+id/filter1_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="No Filter" android:fontFamily="@font/oxygen_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/filter2" android:background="@drawable/custom_ripple_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/filter2img" android:padding="7dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_filter_b_and_w_24px"/>
+                <TextView android:textSize="12dp" android:textColor="#212121" android:gravity="center" android:id="@+id/filter2_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Mono" android:layout_weight="1" android:fontFamily="@font/oxygen_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/filter3" android:background="@drawable/custom_ripple_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/filter3img" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_photo_filter_highcont"/>
+                <TextView android:textSize="12dp" android:textColor="#212121" android:gravity="center" android:id="@+id/filter3_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Enhance" android:layout_weight="1" android:fontFamily="@font/oxygen_bold"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/filter4" android:background="@drawable/custom_ripple_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/filter4img" android:padding="7dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_baseline_gradient_24"/>
+                <TextView android:textSize="12dp" android:textColor="#212121" android:gravity="center" android:id="@+id/filter4_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Modern" android:fontFamily="@font/oxygen_bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

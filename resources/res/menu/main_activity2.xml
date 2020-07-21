@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="none">
+        <item android:icon="@drawable/qrcode_icon" android:id="@+id/generateQR" android:title="Generate QR"/>
+        <item android:icon="@drawable/ic_baseline_group_24" android:id="@+id/about_us" android:title="About Us"/>
+        <item android:icon="@drawable/ic_baseline_policy_24" android:id="@+id/privacy" android:title="Privacy"/>
+    </group>
+    <item android:title="Coming Soon">
+        <menu>
+            <item android:icon="@drawable/ic_baseline_cloud_upload_24" android:id="@+id/cloud" android:title="Cloud Support"/>
+            <item android:icon="@drawable/ic_baseline_picture_as_pdf_24" android:id="@+id/pdf" android:title="Customised PDFs"/>
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item android:icon="@drawable/ic_share_lightgrey_24dp" android:id="@+id/share" android:title="Share with a friend"/>
+            <item android:icon="@drawable/ic_baseline_star_24" android:id="@+id/rate" android:title="Rate us on Google Play"/>
+            <item android:icon="@drawable/ic_baseline_contact_mail_24" android:id="@+id/contact_us" android:title="Contact applex.in"/>
+            <item android:title=""/>
+            <item android:title=""/>
+        </menu>
+    </item>
+</menu>

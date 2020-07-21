@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:layout_width="250dp" android:layout_height="250dp" android:layout_marginTop="-60dp" android:src="@drawable/login2" android:layout_marginStart="-60dp" app:layout_constraintEnd_toEndOf="0"/>
+            <TextView android:textSize="22sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-140dp" android:text="Scan and Generate\10 QRs with SnapLingo!" android:lineSpacingExtra="4dp" android:fontFamily="@font/oxygen_ex_bold"/>
+            <com.airbnb.lottie.LottieAnimationView android:id="@+id/game" android:padding="70dp" android:layout_width="match_parent" android:layout_height="300dp" android:scaleType="fitCenter" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/qr"/>
+            <TextView android:textSize="18sp" android:textColor="#403d37" android:layout_gravity="center" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:text="Scan QR and Bar Codes" android:fontFamily="@font/oxygen_bold" android:textAlignment="center"/>
+            <TextView android:textSize="18sp" android:textColor="#403d37" android:layout_gravity="center" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:text="Generate your own QR" android:fontFamily="@font/oxygen_bold" android:textAlignment="center"/>
+            <ImageView android:layout_gravity="right" android:layout_width="140dp" android:layout_height="140dp" android:layout_marginRight="-40dp" android:src="@drawable/login3" android:scaleType="fitCenter"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/ThemeOverlay.AppCompat.Light" android:gravity="center_vertical" android:id="@+id/toolb" android:background="#fff" android:layout_width="match_parent" android:layout_height="60dp" android:animateLayoutChanges="true" android:elevation="5dp" app:layout_scrollFlags="5" app:titleTextColor="#000"/>

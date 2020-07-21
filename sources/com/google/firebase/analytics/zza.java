@@ -1,0 +1,28 @@
+package com.google.firebase.analytics;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.TimeoutException;
+
+/* compiled from: com.google.android.gms:play-services-measurement-api@@17.4.4 */
+final class zza implements Callable<String> {
+    private final /* synthetic */ FirebaseAnalytics zza;
+
+    zza(FirebaseAnalytics firebaseAnalytics) {
+        this.zza = firebaseAnalytics;
+    }
+
+    /* Return type fixed from 'java.lang.Object' to match base method */
+    @Override // java.util.concurrent.Callable
+    public final /* synthetic */ String call() throws Exception {
+        String zza2 = this.zza.zzb();
+        if (zza2 != null) {
+            return zza2;
+        }
+        String zzh = this.zza.zzb.zzh();
+        if (zzh != null) {
+            this.zza.zza(zzh);
+            return zzh;
+        }
+        throw new TimeoutException();
+    }
+}

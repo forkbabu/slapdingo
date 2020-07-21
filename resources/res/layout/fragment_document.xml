@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/animation_view" android:padding="10dp" android:visibility="visible" android:layout_width="380dp" android:layout_height="380dp" android:layout_marginTop="-220dp" android:layout_marginStart="-20dp" app:lottie_autoPlay="true" app:lottie_loop="false" app:lottie_rawRes="@raw/home2"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/image_recycler" android:paddingBottom="80dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/ic_launcher_round" android:overScrollMode="ifContentScrolls"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

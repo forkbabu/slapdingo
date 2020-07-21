@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="active">
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+    </array>
+    <array name="inactive">
+        <item>@color/colorbase</item>
+        <item>@color/colorbase</item>
+        <item>@color/colorbase</item>
+        <item>@color/colorbase</item>
+    </array>
+</resources>

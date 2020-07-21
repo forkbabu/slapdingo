@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.FitWindowsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/no_permission" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100dp" android:text="No Camera permission granted."/>
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_gravity="top" android:id="@+id/header" android:background="#252525" android:layout_width="match_parent" android:layout_height="60dp">
+            <SeekBar android:layout_gravity="center" android:id="@+id/zoomSeekBar" android:layout_width="200dp" android:layout_height="wrap_content" android:max="200" android:progress="1"/>
+        </FrameLayout>
+        <TextView android:textSize="20sp" android:textColor="#fff" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/zoomLvl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp"/>
+        <io.fotoapparat.view.CameraView android:id="@+id/cameraView" android:background="#252525" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer" android:layout_below="@+id/header">
+            <io.fotoapparat.view.FocusView android:id="@+id/focusView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </io.fotoapparat.view.CameraView>
+        <FrameLayout android:id="@+id/footer" android:background="#252525" android:layout_width="match_parent" android:layout_height="100dp" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/torchSwitch" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:src="@drawable/ic_flash_off_black_24dp" android:contentDescription="flash"/>
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/result" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginStart="10dp"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/capture" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/capture"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/switchCamera" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:src="@drawable/ic_switch" android:contentDescription="@string/flip_camera"/>
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.appcompat.widget.FitWindowsFrameLayout>
