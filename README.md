@@ -1,2 +1,0 @@
-# slapdingo
-SnapLingo but drunk
